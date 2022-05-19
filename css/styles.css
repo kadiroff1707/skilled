@@ -1,3 +1,43 @@
+/* CUSTON-PROPS */
+:root {
+  --text-color: #13183f;
+  --heading-color: #83869a;
+  --light-bg: #f74780;
+  --error-color: #fff;
+}
+
+
+/* FONS-PAGE */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/") format('woff2'),
+      url("../fonts/") format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/") format('woff2'),
+      url("../fonts/") format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/") format('woff2'),
+      url("../fonts/") format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
 /* GLOBAL */
 html{
   scroll-behavior: smooth;
@@ -17,11 +57,12 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color)
 }
 
 img{
@@ -33,7 +74,7 @@ img{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1540px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
